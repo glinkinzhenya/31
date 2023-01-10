@@ -19,11 +19,11 @@
 class HAMBURGER {
     constructor(name, cheese, salad, potatoes, seasoning, mayonnaise) {
         this.name = name;
-        if (cheese) this.cheese = cheese;
-        if (salad) this.salad = salad;
-        if (potatoes) this.potatoes = potatoes;
-        if (seasoning) this.seasoning = seasoning;
-        if (mayonnaise) this.mayonnaise = mayonnaise;
+        this.cheese = cheese;
+        this.salad = salad;
+        this.potatoes = potatoes;
+        this.seasoning = seasoning;
+        this.mayonnaise = mayonnaise;
     };
 
     options() {
@@ -74,5 +74,4 @@ class MyBurger extends HAMBURGER {
 };
 
 let hamburger = new MyBurger(this.name, this.cheese, this.salad, this.potatoes, this.seasoning, this.mayonnaise);
-
 alert(hamburger.options().calories());
